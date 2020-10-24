@@ -1,0 +1,86 @@
+.home-main-section {
+  display: flex; /* Pg. 421 Learning Web Design*/
+  align-items: stretch; /* Pg. 428 Learning Web Design*/
+  justify-content: space-between; /*Pg. 428 Learnign Web Design*/
+  flex-grow: 10; /*Pg. 436 Learning Web Design*/
+}
+
+.home-main-section .img-wrapper {
+  flex-grow: 1; /*Pg. 436 Learning Web Design*/
+  flex-direction: column; /*Pg. 437 Learning Web Design*/
+  display: flex; /* Pg. 421 Learning Web Design*/
+  align-items: stretch; /* Pg. 428 Learning Web Design*/
+  justify-content: flex-end; /*Pg. 428 Learnign Web Design*/
+}
+
+.home-main-section .lady-image {
+  background-image: url(images/landing-page-girl.png);
+  flex-grow: 1; /*Pg. 436 Learning Web Design*/
+  max-height: 70vh; /* Pg. 360 Learning Web Design*/
+  min-width: 30vw; /* Pg. 360 Learning Web Design*/
+  background-size: contain;/* Pg. 326 Learning Web Design*/
+  background-repeat: no-repeat;/* Pg. 326 Learning Web Design*/
+  background-position: bottom left;/* Pg. 326 Learning Web Design*/
+}
+
+.home-main-section .call-to-action {
+  display: flex;/* Pg. 421 Learning Web Design*/
+  flex-direction: column;/*Pg. 437 Learning Web Design*/
+  align-items: flex-start; /* Pg. 428 Learning Web Design*/
+  margin: 1rem; /*Pg. 28 Learning Web Design*/
+  align-self: center;/* Pg. 431 Learning Web Design*/
+}
+
+@media (max-width: 900px) {
+  .home-main-section .img-wrapper {
+    display: none;/* Pg. 421 Learning Web Design*/
+  }
+
+  .home-main-section {
+    justify-content: flex-end;/*Pg. 428 Learnign Web Design*/
+  }
+}
+
+.home-page-circle-1 {
+  position: absolute;/*Pg. 408 Learnign Web Design*/
+  width: 25vw; /*Pg. 151  Learning Web Design*/
+  height: 25vw;/*Pg. 151  Learning Web Design*/
+  border-radius: 50%;/* Pg. 371 Learning Web Design*/
+  background-color: rgb(188, 58, 128, .1); /*Pg. 312 Learning Web Design*/
+  bottom: 5vw;/*Pg. 151  Learning Web Design*/
+  left: 5vw;/*Pg. 151  Learning Web Design*/
+  z-index: -1;/* Pg 414 Learning Web Design*/
+}
+
+
+.home-page-circle-2 {
+  position: absolute;/*Pg. 408 Learnign Web Design*/
+  width: 25vw;/*Pg. 151  Learning Web Design*/
+  height: 25vw;/*Pg. 151  Learning Web Design*/
+  border-radius: 50%;/* Pg. 371 Learning Web Design*/
+  background-color: rgb(52, 87, 178, .1);/*Pg. 312 Learning Web Design*/
+  top: 15vh;/*Pg. 253 Learning Web Design*/
+  left: 30vw;/*Pg. 151  Learning Web Design*/
+  z-index: -1;/* Pg 414 Learning Web Design*/
+}
+
+
+.home-page-circle-3 {
+  position: absolute;/*Pg. 408 Learnign Web Design*/
+  overflow: hidden;/*Pg. 360 Learning Web Design*/
+  width: 45vw;/*Pg. 151  Learning Web Design*/
+  height: 45vw;/*Pg. 151  Learning Web Design*/
+  bottom: 0; /*Pg. 406 Learning Web Design*/
+  right: 0;/*Pg. 406 Learning Web Design*/
+  z-index: -1;/* Pg 414 Learning Web Design*/
+}
+
+.home-page-circle-3::before {
+  content: ''; /* Pg. 322 Learning Web Design*/
+  transform: translate(40%, 40%); /* Pg. 529 Learning Web Design*/
+  position: absolute;/*Pg. 408 Learnign Web Design*/
+  height: 100%;/*Pg. 358 Learnign Web Design*/
+  width: 100%;/*Pg. 358 Learnign Web Design*/
+  border-radius: 50%;/* Pg. 371 Learning Web Design*/
+  background-color: rgb(52, 87, 178, .1);/*Pg. 312 Learning Web Design*/
+}

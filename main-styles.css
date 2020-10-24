@@ -1,0 +1,111 @@
+@charset "UTF-8";
+html{
+  box-sizing: border-box; /* pg. 358 Learning Web Design*/
+}
+  *{
+    box-sizing: inherit;/* pg. 360 Learning Web Design*/
+  }
+
+body {
+  font-family: Georgia, serif; /* Pg. 243 Learning Web design*/
+  font-size: 100%; /* Pg. 243 Learning Web design*/
+  background-color: white;/*Pg. 312 Learning Web Design*/
+}
+
+/* link styles */
+a:link, a:visited { color: #DC6903; }/*Pg. 316 Learning Web Design*/
+a:focus, a:hover, a:active { color: #F9AB33; }/*Pg. 317 Learning Web Design*/
+a{
+  text-decoration: none;/*Pg. 283 Learning Web Design*/
+  /*border-bottom: 1px dotted; */
+  padding-bottom: .2em;/*Pg. 361 Learning Web design*/
+}
+
+
+/* header styles */
+header {
+  color: white; /* Pg. 304 Learning Web Design*/
+  text-align: right; /*Pg. 289 Learning Web Design*/
+  height: 25em; /*Pg. 151  Learning Web Design*/
+}
+header p {
+  font-style: italic; /*Pg. 274 Learning Web Design*/
+  font-size: 1.2em; /*Pg. 277 Learning Web Design*/
+}
+
+/* nav styles */
+nav, footer {
+  font-family: verdana, sans-serif; /*Pg. 266 Learning Web Design*/
+  background-color: #783F27; /*Pg. 312 Learning Web Design*/
+  border-radius: 25px;/* Pg. 371 Learning Web Design*/
+  line-height: 0.35em;/* Pg. 277 Learning Web Design*/
+  padding: 1.5em; /* pg. 361 Learning Web Design*/
+
+
+}
+
+
+nav ul li a:link, nav ul li a:visited {
+  color: #F9AB33;/* Pg. 304 Learning Web Design*/
+}
+nav ul li a:focus, nav ul li a:hover, nav ul li a:active {
+  color: #fff;/* Pg. 304 Learning Web Design*/
+}
+nav ul li {
+  font-size: .8em;/* Pg. 243 Learning Web design*/
+  text-transform: uppercase; /* Pg. 291 Learning Web design*/
+  letter-spacing: .2em; /* Pg. 292 Learning Web design*/
+}
+
+/* main "products" styles */
+main {
+
+  font-family: 'Poppins', sans-serif; /*Pg. 266 Learning Web Design*/
+  /*font-family: 'Stint Ultra Expanded', cursive; */
+  background-color: #BFCA9D;/*Pg. 312 Learning Web Design*/
+  line-height: 1.8em;/* Pg. 277 Learning Web Design*/
+  color: #555;/* Pg. 304 Learning Web Design*/
+  padding: 1.5em;/* pg. 361 Learning Web Design*/
+  border: double 4px #EADDC4;/* pg. 371 Learning Web Design*/
+  border-radius: 25px;/* pg. 371 Learning Web Design*/
+}
+h3 {
+  text-transform: uppercase;/* Pg. 291 Learning Web design*/
+  letter-spacing: .2em;/* Pg. 292 Learning Web design*/
+  color: #7A0002;/* Pg. 304 Learning Web Design*/
+  border-top: 1px solid;/*Pg. 369 Learning Web Design*/
+  border-left: 3px solid;/*Pg. 369 Learning Web Design*/
+  padding-left: 1em; /*Pg. 362 Learning Web Design*/
+}
+p.more {
+  font-family: verdana, sans-serif;/* Pg. 243 Learning Web design*/
+  text-transform: uppercase;/*Pg. 291 Learning Web Design*/
+  font-size: .8em;/*Pg. 270 Learning Web Design*/
+}
+
+/* aside "hours" styles */
+aside {
+  background: url(images/scallop.png) repeat-y left top;
+  background-color: #F6F3ED;
+  padding: 1em;
+  padding-left: 45px;
+  border-top-right-radius: 25px;
+}
+/* misc styles */
+footer {
+  color: #EADDC4;
+  text-align: center;
+  font-size: .9em;
+  padding: 1em;
+  border-radius: 25px;
+}
+h2 {
+  font-family: 'Stint Ultra Expanded', cursive;
+}
+.day {
+  color: #783F27;
+  font-family: verdana, sans-serif;
+  font-size: .8em;
+  text-transform: uppercase;
+}
+
